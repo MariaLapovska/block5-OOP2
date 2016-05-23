@@ -1,2 +1,2 @@
 # block5-OOP2
-OOP2 lab made for epam cources, variant 3.
+OOP2 lab made for epam courses, variant 3.
