@@ -1,6 +1,6 @@
 package com.epam.functions;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 /**
  * Created by Asus on 19.05.2016.
@@ -130,7 +130,7 @@ public class Parabola extends Function {
         try {
             Parabola temp = (Parabola) super.clone();
 
-            temp.points = new LinkedHashSet<>();
+            temp.points = new TreeSet<>();
 
             for (Point p : points) {
                 temp.points.add(p.clone());

@@ -3,7 +3,7 @@ package com.epam.functions;
 /**
  * Created by Maria on 20.05.2016.
  */
-public class Point implements Cloneable {
+public class Point implements Cloneable, Comparable<Point> {
 
     private double x;
     private double y;
@@ -76,5 +76,10 @@ public class Point implements Cloneable {
         } catch (CloneNotSupportedException ex) {
             return null;
         }
+    }
+
+    @Override
+    public int compareTo(Point p) {
+        return Double.compare(x, p.x);
     }
 }

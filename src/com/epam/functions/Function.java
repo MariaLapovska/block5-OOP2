@@ -1,13 +1,13 @@
 package com.epam.functions;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 /**
  * Created by Asus on 19.05.2016.
  */
 public abstract class Function implements Cloneable {
 
-    protected LinkedHashSet<Point> points = new LinkedHashSet<>();
+    protected TreeSet<Point> points = new TreeSet<>();
 
     public abstract double[] solve();
     public abstract double findYbyX(double x);
@@ -26,7 +26,7 @@ public abstract class Function implements Cloneable {
         }
     }
 
-    public LinkedHashSet<Point> getPoints() {
+    public TreeSet<Point> getPoints() {
         return points;
     }
 }

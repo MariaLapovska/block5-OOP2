@@ -1,6 +1,6 @@
 package com.epam.functions;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 /**
  * Created by Maria on 20.05.2016.
@@ -99,7 +99,7 @@ public class Linear extends Function {
         try {
             Linear temp = (Linear) super.clone();
 
-            temp.points = new LinkedHashSet<>();
+            temp.points = new TreeSet<>();
 
             for (Point p : points) {
                 temp.points.add(p.clone());
